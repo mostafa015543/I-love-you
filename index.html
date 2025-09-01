@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>لحظة هدوء ✨</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    video{
+      height: 400px;
+      width: 100%;
+    }
+    body {
+      font-family: "Cairo", sans-serif;
+      background: linear-gradient(135deg, #0d0d1a, #1a0030);
+      color: #fff;
+      overflow-x: hidden;
+    }
+    .hearts-wrap {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .heart-anim {
+      position: absolute;
+      bottom: -80px;
+      font-size: 22px;
+      opacity: .9;
+      animation: upfloat linear infinite;
+      color: #ff4f70;
+    }
+    @keyframes upfloat {
+      0% {transform: translateY(0) rotate(0deg); opacity: .95;}
+      50% {opacity: .7;}
+      100% {transform: translateY(-120vh) rotate(360deg); opacity: .05;}
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, .07);
+      border-radius: 1.5rem;
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,.15);
+      box-shadow: 0 10px 30px rgba(0,0,0,.4);
+      padding: 2rem;
+      z-index: 2;
+      position: relative;
+    }
+    .video-box {
+      border-radius: 1rem;
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 25px rgba(255,79,112,.35);
+    }
+    .soft-text {
+      font-size: 1.1rem;
+      line-height: 1.9;
+      text-align: center;
+      white-space: pre-line;
+      color: #f5f5f5;
+    }
+  </style>
+</head>
+<body>
+  <div class="hearts-wrap">
+    <div class="heart-anim" style="left:15%;animation-duration:12s;">✨</div>
+    <div class="heart-anim" style="left:35%;animation-duration:9s;">🌙</div>
+    <div class="heart-anim" style="left:55%;animation-duration:15s;">⭐</div>
+    <div class="heart-anim" style="left:75%;animation-duration:11s;">✨</div>
+    <div class="heart-anim" style="left:90%;animation-duration:14s;">🌌</div>
+  </div>
+
+  <div class="container d-flex align-items-center justify-content-center min-vh-100">
+    <div class="glass-card text-center">
+      <h1 class="mb-4 fw-bold text-light">لحظة هدوء ✨</h1>
+      <div class="video-box">
+        <video class="w-100" controls>
+          <source src="vid.mp4" type="video/mp4" class="w-100 h-25">
+          متصفحك لا يدعم تشغيل الفيديو.
+        </video>
+      </div>
+      <p class="soft-text">
+        في عيونك لقيت طريق أطول من العمر،
+        ماشي فيه وأنا مطمن،
+        كأن الخطوة بينا دايمًا ليها معنى.
+        
+        💫
+        مع كل يوم بيعدي،
+        بحس إن الدنيا أوسع،
+        وكأنك إنتِ الحلم اللي بقي حقيقة.
+        
+        🌙
+        لو الدنيا هديت في لحظة،
+        هسمع صوتك جوايا،
+        زي لحن بيرجعني من أي غربة. 
+      </p>
+    </div>
+  </div>
+</body>
+</html>
